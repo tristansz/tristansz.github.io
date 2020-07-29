@@ -30,28 +30,27 @@
 
   <header>
     <div class="overlay"></div>
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="World"><source src="World.mp4" type="video/mp4"></video>
-    <div class="container h-100">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="World"><source src="World.mp4" type="video/mp4"></video>
+    <div id="app" class="container">
+      <card data-image="https://i2.wp.com/sparkonit.com/wp-content/uploads/2019/05/quantum-physics.jpg?fit=1920%2C1080&ssl=1">
+        <h1 slot="header">Physics</h1>
+        <p slot="content">Quantum Physics, Relativity</p>
+      </card>
+      <card data-image="https://wallpaperaccess.com/full/1094556.png">
+        <h1 slot="header">Space</h1>
+        <p slot="content">Exploration</p>
+      </card>
+      <card data-image="./AI.png">
+        <h1 slot="header">A.I.</h1>
+        <p slot="content">Neural Networks</p>
+      </card>
+      <card data-image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2434d52-5bf9-43b4-b9aa-cc5a28c70ab6/d9ut9nd-f493705b-3ef1-4c01-87cd-f5c22fbd9f0c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYjI0MzRkNTItNWJmOS00M2I0LWI5YWEtY2M1YTI4YzcwYWI2XC9kOXV0OW5kLWY0OTM3MDViLTNlZjEtNGMwMS04N2NkLWY1YzIyZmJkOWYwYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6H8525q54oAfRfgiwym-vn8aqn1qIMUUnLdXrE_XGgM">
+        <h1 slot="header">Electrical</h1>
+        <p slot="content">Circuits, Power, Embedded Systems</p>
+      </card>
+    </div>
   </header>
 
-  <div id="app" class="container">
-    <card data-image="https://i2.wp.com/sparkonit.com/wp-content/uploads/2019/05/quantum-physics.jpg?fit=1920%2C1080&ssl=1">
-      <h1 slot="header">Physics</h1>
-      <p slot="content">Quantum Physics, Relativity</p>
-    </card>
-    <card data-image="https://wallpaperaccess.com/full/1094556.png">
-      <h1 slot="header">Space</h1>
-      <p slot="content">Exploration</p>
-    </card>
-    <card data-image="./AI.png">
-      <h1 slot="header">A.I.</h1>
-      <p slot="content">Neural Networks</p>
-    </card>
-    <card data-image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2434d52-5bf9-43b4-b9aa-cc5a28c70ab6/d9ut9nd-f493705b-3ef1-4c01-87cd-f5c22fbd9f0c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYjI0MzRkNTItNWJmOS00M2I0LWI5YWEtY2M1YTI4YzcwYWI2XC9kOXV0OW5kLWY0OTM3MDViLTNlZjEtNGMwMS04N2NkLWY1YzIyZmJkOWYwYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6H8525q54oAfRfgiwym-vn8aqn1qIMUUnLdXrE_XGgM">
-      <h1 slot="header">Electrical</h1>
-      <p slot="content">Circuits, Power, Embedded Systems</p>
-    </card>
-  </div>
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
   <script src="./interests.js"></script>
