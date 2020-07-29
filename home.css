@@ -145,10 +145,3 @@ header .overlay {
               0 0 200px #913399;
    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
-
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-}

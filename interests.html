@@ -1,106 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Interests</title>
-  <script src="interests.js"></script>
+  <title>CodePen - Parallax Depth Cards</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="interests.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700">
+  <link rel="stylesheet" href="./interests.css">
 </head>
 
 <body>
-  <div class="cardList">
-    <button class="cardList__btn btn btn--left">
-      <div class="icon">
-        <svg>
-          <use xlink:href="#arrow-left"></use>
-        </svg>
-      </div>
-    </button>
-
-    <div class="cards__wrapper">
-      <div class="card current--card">
-        <div class="card__image">
-          <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-        </div>
-      </div>
-
-      <div class="card next--card">
-        <div class="card__image">
-          <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-        </div>
-      </div>
-
-      <div class="card previous--card">
-        <div class="card__image">
-          <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-        </div>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" name="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./home.html">About</a></li>
+          <li class="nav-item active"><a class="nav-link" href="./interests.html">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="./home.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="./home.html">Contact</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <button class="cardList__btn btn btn--right">
-      <div class="icon">
-        <svg>
-          <use xlink:href="#arrow-right"></use>
-        </svg>
-      </div>
-    </button>
+  <div id="app" class="container">
+    <card data-image="https://i2.wp.com/sparkonit.com/wp-content/uploads/2019/05/quantum-physics.jpg?fit=1920%2C1080&ssl=1">
+      <h1 slot="header">Physics</h1>
+      <p slot="content">Quantum Physics, Relativity</p>
+    </card>
+    <card data-image="https://wallpaperaccess.com/full/1094556.png">
+      <h1 slot="header">Space</h1>
+      <p slot="content">Exploration</p>
+    </card>
+    <card data-image="./AI.png">
+      <h1 slot="header">A.I.</h1>
+      <p slot="content">Neural Networks</p>
+    </card>
+    <card data-image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2434d52-5bf9-43b4-b9aa-cc5a28c70ab6/d9ut9nd-f493705b-3ef1-4c01-87cd-f5c22fbd9f0c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYjI0MzRkNTItNWJmOS00M2I0LWI5YWEtY2M1YTI4YzcwYWI2XC9kOXV0OW5kLWY0OTM3MDViLTNlZjEtNGMwMS04N2NkLWY1YzIyZmJkOWYwYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6H8525q54oAfRfgiwym-vn8aqn1qIMUUnLdXrE_XGgM">
+      <h1 slot="header">Electrical</h1>
+      <p slot="content">Circuits, Power, Embedded Systems</p>
+    </card>
   </div>
-
-  <div class="infoList">
-    <div class="info__wrapper">
-      <div class="info current--info">
-        <h1 class="text name">Highlands</h1>
-        <h4 class="text location">Scotland</h4>
-        <p class="text description">The mountains are calling</p>
-      </div>
-
-      <div class="info next--info">
-        <h1 class="text name">Machu Pichu</h1>
-        <h4 class="text location">Peru</h4>
-        <p class="text description">Adventure is never far away</p>
-      </div>
-
-      <div class="info previous--info">
-        <h1 class="text name">Chamonix</h1>
-        <h4 class="text location">France</h4>
-        <p class="text description">Let your dreams come true</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="app__bg">
-    <div class="app__bg__image current--image">
-      <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-    </div>
-    <div class="app__bg__image next--image">
-      <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-    </div>
-    <div class="app__bg__image previous--image">
-      <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-    </div>
-  </div>
-
-  <div class="loading__wrapper">
-    <div class="loader--text">Loading...</div>
-    <div class="loader">
-      <span></span>
-    </div>
-  </div>
-
-  <svg class="icons" style="display: none;">
-    <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-      <polyline points='328 112 184 256 328 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-    </symbol>
-    <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-      <polyline points='184 112 328 256 184 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-    </symbol>
-  </svg>
-
-  <div class="support">
-    <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
-    <a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
-  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+  <script src="./interests.js"></script>
 </body>
 
 </html>
